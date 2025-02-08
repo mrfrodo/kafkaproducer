@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package user.event;
+
+message UserCreatedEvent {
+  string username = 1;
+  string firstname = 2;
+  string lastname = 3;
+  string email = 4;
+  int64 createdat = 5; // Unix timestamp
+}
